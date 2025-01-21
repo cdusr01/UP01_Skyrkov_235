@@ -9,7 +9,8 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.skyrkov.task1.NewController">
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.skyrkov.task1.NewController">
    <children>
       <BorderPane layoutX="200.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <center>
@@ -17,49 +18,45 @@
                <children>
                   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
                      <children>
-                        <Label text="a = ">
+                        <Label text="Число">
                            <HBox.margin>
-                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                              <Insets left="10.0" right="10.0" />
                            </HBox.margin>
                         </Label>
-                        <TextField fx:id="inputa" alignment="CENTER" promptText="Введите а">
+                        <TextField fx:id="inputField">
                            <HBox.margin>
-                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-                           </HBox.margin>
-                        </TextField>
-                        <Label text="b = ">
-                           <HBox.margin>
-                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-                           </HBox.margin>
-                        </Label>
-                        <TextField fx:id="inputb" promptText="Введите b">
-                           <HBox.margin>
-                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                              <Insets left="10.0" right="10.0" />
                            </HBox.margin>
                         </TextField>
                      </children>
                   </HBox>
                   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
                      <children>
-                        <Label fx:id="resultc" alignment="CENTER" text="c = ">
+                        <Label text="Число">
                            <HBox.margin>
-                              <Insets bottom="10.0" left="10.0" right="100.0" top="10.0" />
+                              <Insets left="10.0" right="10.0" />
                            </HBox.margin>
                         </Label>
-                        <Label fx:id="resultP" text="P = ">
+                        <TextField fx:id="numberField" editable="false">
                            <HBox.margin>
-                              <Insets bottom="10.0" left="100.0" right="10.0" top="10.0" />
+                              <Insets left="10.0" right="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Label text="Позиция">
+                           <HBox.margin>
+                              <Insets left="10.0" right="10.0" />
                            </HBox.margin>
                         </Label>
+                        <TextField fx:id="posField" editable="false">
+                           <HBox.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </HBox.margin>
+                        </TextField>
                      </children>
                   </HBox>
                   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
                      <children>
-                        <Button fx:id="resultBtn" mnemonicParsing="false" onAction="#onClickResult" text="Найти">
-                           <HBox.margin>
-                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-                           </HBox.margin>
-                        </Button>
+                        <Button mnemonicParsing="false" onAction="#onClickResult" text="Button" />
                      </children>
                   </HBox>
                </children>
