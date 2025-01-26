@@ -32,11 +32,6 @@
                                 <Label text="Дополнительное задание 2" />
                             </children>
                         </HBox>
-                        <HBox alignment="CENTER" GridPane.rowIndex="1">
-                            <children>
-                                <Label text="Вводные данные" />
-                            </children>
-                        </HBox>
                         <VBox alignment="CENTER" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                             <children>
                                 <TextField fx:id="ETextField" promptText="E" />
@@ -63,5 +58,10 @@
                 </GridPane>
             </center>
         </BorderPane>
+            <HBox alignment="CENTER" layoutX="-168.0" layoutY="139.0">
+                <children>
+                    <Label text="Вводные данные" />
+                </children>
+            </HBox>
     </children>
 </AnchorPane>
